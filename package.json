@@ -1,0 +1,22 @@
+{
+  "name": "mill-java-project",
+  "version": "1.0.0",
+  "description": "关于java项目的管理",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mill6780888@github.com/mill6780888/mill-java-project.git"
+  },
+  "author": "mill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mill6780888/mill-java-project/issues"
+  },
+  "homepage": "https://github.com/mill6780888/mill-java-project#readme",
+  "devDependencies": {
+    "gulp-replace": "^0.5.4"
+  }
+}
