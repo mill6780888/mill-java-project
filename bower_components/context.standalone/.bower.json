@@ -1,0 +1,14 @@
+{
+  "name": "context.standalone",
+  "_cacheHeaders": {
+    "ETag": "\"15f5-4c87ef3d37a40-gzip\"",
+    "Last-Modified": "Thu, 30 Aug 2012 17:24:49 GMT",
+    "Content-Length": "1413",
+    "Content-Type": "text/css"
+  },
+  "_release": "e-tag:15f5-4c87",
+  "main": "index.css",
+  "_source": "http://lab.jakiestfu.com/contextjs/context.standalone.css",
+  "_target": "*",
+  "_originalSource": "http://lab.jakiestfu.com/contextjs/context.standalone.css"
+}

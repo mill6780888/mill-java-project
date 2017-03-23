@@ -1,22 +1,22 @@
 {
   "name": "mill-java-project",
-  "version": "1.0.0",
-  "description": "关于java项目的管理",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://mill6780888@github.com/mill6780888/mill-java-project.git"
-  },
-  "author": "mill",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mill6780888/mill-java-project/issues"
-  },
-  "homepage": "https://github.com/mill6780888/mill-java-project#readme",
-  "devDependencies": {
-    "gulp-replace": "^0.5.4"
+  "dependencies": {
+	"body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "jade": "~1.11.0",
+    "mill-mysql-utils": "^1.0.0",
+    "mill-n-utils": "^1.0.7",
+    "morgan": "~1.7.0",
+    "promise": "^7.1.1",
+    "serve-favicon": "~2.3.0",
+    "sqlite3": "^3.1.8",
+    "xml2js": "^0.4.17"
   }
 }
