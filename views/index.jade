@@ -1,5 +1,6 @@
 extends layout
 
 block content
+  script(data-main="/main.js/#{appName}",src="/requirejs/require.js")
   h1= title
   p Welcome to #{title}

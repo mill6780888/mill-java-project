@@ -6,10 +6,9 @@ module.exports={
 			"context",
 			"angular-route",
 			"angular-tree",
-			"app",
+			"/main/app.js",
 			"ace",
 			"ext-language",
-			"ace_config",
 
 	],
 	paths:{
