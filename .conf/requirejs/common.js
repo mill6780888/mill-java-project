@@ -6,8 +6,8 @@ module.exports={
 			"context",
 			"angular-route",
 			"angular-tree",
-			"/main/app.js",
 			"ace",
+			"app",
 			"ext-language",
 
 	],
@@ -19,7 +19,9 @@ module.exports={
 		"angular-route":"/angular-route/angular-route",
 		"context":"/context/index",
 		"angular-tree":"/angular-tree-control/angular-tree-control",
-		"jquery":"/jquery/dist/jquery"
+		"ui-grid":"/angular-ui-grid/ui-grid",
+		"jquery":"/jquery/dist/jquery",
+		"app":"/main/app"
 
 	},
 	shim:{
@@ -28,6 +30,13 @@ module.exports={
 			deps:[
 			"jquery",
 			"css!/bootstrap/dist/css/bootstrap.css"//2,依赖的地方用css!路径
+			]
+		},
+		"ui-grid":{
+			exports:"ui-grid",
+			deps:[
+			"angular",
+			"css!/angular-ui-grid/ui-grid.css"
 			]
 		},
 		"angular":{

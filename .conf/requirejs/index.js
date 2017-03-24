@@ -1,13 +1,15 @@
 //存放requirejs的共有依赖项
 module.exports={
 	require: [
+			
 			"/main/indexCtrl.js",
+			"ui-grid"
 			
 
 	],
 	paths:{
 		
-
+		
 	},
 	shim:{
 		

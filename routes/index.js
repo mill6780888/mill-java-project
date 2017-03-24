@@ -15,17 +15,25 @@ router.get('/main.js/:appName', function(req, res, next) {
 	let tpl=mutil.fs.read(path.resolve(__dirname,"../",".conf/requirejs/main.tpl"));
 	let appnameLocal=req.params.appName.replace(/.js/g,"");
 	let indexConf=require('../.conf/requirejs/'+appnameLocal+'.js');
+	
 	try{
 		for (var i in indexConf) {
+			if(Array.isArray(main[i])&&Array.isArray(indexConf[i])){
+				main[i]=main[i].concat(indexConf[i]);
+				continue;
+			}
 			if(main[i])
 			Object.assign(main[i],indexConf[i]);
 			else main[i]=indexConf[i];
 
 		}
-	}catch(e){
-		console.log(e);
+	}catch(err){
+		console.log(err);
 	}
+
+	
 	let result=mutil.ejs.render(tpl,main);
+
 	console.log(result);
 	res.send(result);
   // res.render('index', { title: 'Mill' });
